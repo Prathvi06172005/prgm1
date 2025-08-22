@@ -1,11 +1,21 @@
-package com;
+package coma;
 
-public class Prg2 {
+public class Prg2{
 	public static void main(String[] args)
 	{
-		double d=13.99;
-		int a=(int)d;
-		System.out.println(a);
+		int a=10;
+		int b=0;
+		System.out.println("program start");
+		
+		try
+		{
+			System.out.println(a/b);
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("diviseble not possible");
+			
+		}
+		System.out.println("program ends");
 	}
-
 }
